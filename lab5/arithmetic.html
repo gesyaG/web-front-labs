@@ -17,9 +17,27 @@
             alert('Cумма ' + a + ' и ' + b + ' равна ' + result);
         }
 
+        function showAuthor() {
+            let author = 'Автор страницы:\nГерасимов Александр Александрович';
+            alert(author);
+        }
+
+        function showMessage() {
+            let message = 'Приветствую в моём подвале\nМой девиз прост: выбирайся из подвала!';
+            alert(message);
+        }
+
     </script>
 
     <style>
+        header {
+            cursor: pointer;
+        }
+
+        footer {
+            cursor: pointer;
+        }
+
         .message {
             width: 300px;
             height: 20px;
@@ -36,16 +54,16 @@
     </style>
 </head>
 <body>
-<header>
+<header onclick="showAuthor()">
     НГТУ, ФБ, Лабораторная работа 5
 </header>
 
 <main>
     <div class="message" onclick="showSum()">Сколько будет 5154+7891?</div>
-    <div class="message">Узнать, кто автор страницы</div>
+    <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div>
 </main>
 
-<footer>
+<footer ondblclick="showMessage()">
     &copy; Александр Герасимов, ФБИ-23. 2 курс, 2024
 </footer>
 </body>
