@@ -19,6 +19,7 @@ main {
 a {
     text-decoration: none;
     font-weight: bold;
+    transition: 1s 2s;
 }
 
 a:link {
@@ -31,6 +32,7 @@ a:visited {
 
 a:hover {
     color: lightcoral;
+    transition: 0.3s;
 }
 
 a:active {
