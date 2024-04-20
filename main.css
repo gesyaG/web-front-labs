@@ -16,9 +16,27 @@ main {
     margin: 50px;
 }
 
+h1 {
+    text-align: center;
+}
+
+div.menu {
+    border: 1px solid maroon;
+    border-radius: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+div.menu:hover {
+    background-color: #ffffff30;
+    box-shadow: 0 0 15px #00000030;
+    transition: 0.5s;
+}
+
 a {
     text-decoration: none;
     font-weight: bold;
+    font-size: 28px;
     transition: 1s 2s;
 }
 
