@@ -54,6 +54,14 @@
             alert(message);
         }
 
+        function changeOutput(buttonNum, backColor, textColor, borderColor) {
+            let output = document.getElementById('output');
+            output.innerHTML = 'Нажата кнопка ' + buttonNum;
+            output.style.backgroundColor = backColor;
+            output.style.color = textColor;
+            output.style.borderColor = borderColor;
+        }
+
     </script>
 
     <style>
@@ -78,6 +86,12 @@
             font-weight: bold;
             cursor: pointer;
         }
+
+        #output {
+            border: 1px solid;
+            width: 300px;
+            height: 40px;
+        }
     </style>
 </head>
 <body>
@@ -93,6 +107,15 @@
     <div class="message" onclick="showMulti()">Найти произведение чисел</div>
     <div class="message" onclick="showQuot()">Найти частное чисел</div>
     <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div>
+
+    <div>
+        <input type="button" value="Кнопка 1" onclick="changeOutput(1, 'red', 'yellow', 'orange')">
+        <input type="button" value="Кнопка 2" onclick="changeOutput(2, 'black', 'lime', 'blue')">
+        <input type="button" value="Кнопка 3" onclick="changeOutput(3, 'blue', 'white', 'black')">
+        <input type="button" value="Кнопка 4" onclick="changeOutput(4, 'orange', 'purple', 'red')">
+
+        <div id="output"></div>
+    </div>
 </main>
 
 <footer ondblclick="showMessage()">
