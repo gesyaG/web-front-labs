@@ -10,10 +10,10 @@
     <link rel="icon" href="../favicon-16x16.png">
 
     <script>
-        function blurChange() {
-            let value = document.getElementById('blurValue').value + '%';
-            document.getElementById('blurOutput').innerText = value;
-            document.getElementById('blueImage').style.filter = 'saturate(' + value + ')';
+        function sepiaChange() {
+            let value = document.getElementById('sepiaValue').value + '%';
+            document.getElementById('sepiaOutput').innerText = value;
+            document.getElementById('sepiaImage').style.filter = 'sepia(' + value + ')';
         }
     </script>
 
@@ -25,12 +25,12 @@
 
 <main>
     <div>
-        Фильтр saturate:
-        <input type="range" min="0" max="500" value="0" onchange="blurChange()" id="blurValue">
-        <span id="blurOutput"></span>
+        Фильтр sepia:
+        <input type="range" min="0" max="100" value="0" onchange="sepiaChange()" id="sepiaValue">
+        <span id="sepiaOutput"></span>
     </div>
     <div>
-        <img src="../images/faceit%20zakat.jpg" id="blueImage" alt="Картинка">
+        <img src="../images/faceit%20zakat.jpg" id="sepiaImage" alt="Картинка">
     </div>
 </main>
 
