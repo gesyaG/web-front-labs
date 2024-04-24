@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Герасимов Александр Александрович. Лабораторная 5</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon-32x32.png">
+    <link rel="icon" href="../favicon-16x16.png">
+
+    <script>
+        function hideCircle1() {
+            let circleOne = document.getElementById('circle-1');
+            circleOne.style.scale = '0';
+            circleOne.style.transition = '1s';
+        }
+        function hideCircle2() {
+            let circleTwo =  document.getElementById('circle-2');
+            circleTwo.style.scale = '0';
+            circleTwo.style.transition = '1s';
+        }
+        function hideCircle3() {
+            let circleThree =  document.getElementById('circle-3');
+            circleThree.style.scale = '0';
+            circleThree.style.transition = '1s';
+        }
+        function hideCircle4() {
+            let circleFour =  document.getElementById('circle-4');
+            circleFour.style.scale = '0';
+            circleFour.style.transition = '1s';
+        }
+        function hideCircle5() {
+            let circleFive =  document.getElementById('circle-5');
+            circleFive.style.scale = '0';
+            circleFive.style.transition = '1s';
+        }
+        function hideCircle6() {
+            let circleSix =  document.getElementById('circle-6');
+            circleSix.style.scale = '0';
+            circleSix.style.transition = '1s';
+        }
+        function hideCircle7() {
+            let circleSeven =  document.getElementById('circle-7');
+            circleSeven.style.scale = '0';
+            circleSeven.style.transition = '1s';
+        }
+        function hideCircle8() {
+            let circleEight =  document.getElementById('circle-8');
+            circleEight.style.scale = '0';
+            circleEight.style.transition = '1s';
+        }
+        function hideCircle9() {
+            let circleNine =  document.getElementById('circle-9');
+            circleNine.style.scale = '0';
+            circleNine.style.transition = '1s';
+        }
+        function hideCircle10() {
+            let circleTen =  document.getElementById('circle-10');
+            circleTen.style.scale = '0';
+            circleTen.style.transition = '1s';
+        }
+
+        function foundCircles() {
+            let circleOne = document.getElementById('circle-1');
+            circleOne.style.scale = '1';
+            circleOne.style.transition = '1s';
+            let circleTwo =  document.getElementById('circle-2');
+            circleTwo.style.scale = '1';
+            circleTwo.style.transition = '1s';
+            let circleThree =  document.getElementById('circle-3');
+            circleThree.style.scale = '1';
+            circleThree.style.transition = '1s';
+            let circleFour =  document.getElementById('circle-4');
+            circleFour.style.scale = '1';
+            circleFour.style.transition = '1s';
+            let circleFive =  document.getElementById('circle-5');
+            circleFive.style.scale = '1';
+            circleFive.style.transition = '1s';
+            let circleSix =  document.getElementById('circle-6');
+            circleSix.style.scale = '1';
+            circleSix.style.transition = '1s';
+            let circleSeven =  document.getElementById('circle-7');
+            circleSeven.style.scale = '1';
+            circleSeven.style.transition = '1s';
+            let circleEight =  document.getElementById('circle-8');
+            circleEight.style.scale = '1';
+            circleEight.style.transition = '1s';
+            let circleNine =  document.getElementById('circle-9');
+            circleNine.style.scale = '1';
+            circleNine.style.transition = '1s';
+            let circleTen =  document.getElementById('circle-10');
+            circleTen.style.scale = '1';
+            circleTen.style.transition = '1s';
+        }
+
+    </script>
+
+    <style>
+        .circle {
+            border-radius: 50%;
+            border: 2px solid maroon;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 25px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .circle-1 {
+            background-color: transparent;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        .circle-2 {
+            background-color: red;
+            position: relative;
+            top: 100px;
+            left: 220px;
+        }
+
+        .circle-3 {
+            background-color: blue;
+            position: relative;
+            top: 200px;
+            left: 20px;
+        }
+
+        .circle-4 {
+            background-color: purple;
+            position: relative;
+            top: 400px;
+            left: 120px;
+        }
+
+        .circle-5 {
+            background-color: white;
+            position: relative;
+            top: 20px;
+            left: 1220px;
+        }
+
+        .circle-6 {
+            background-color: black;
+            position: relative;
+            top: 300px;
+            left: 10px;
+        }
+
+        .circle-7 {
+            background-color: green;
+            position: relative;
+            top: 200px;
+            left: 800px;
+        }
+
+        .circle-8 {
+            background-color: orange;
+            position: relative;
+            top: 100px;
+            left: 1400px;
+        }
+
+        .circle-9 {
+            background-color: yellow;
+            position: relative;
+            top: 15px;
+            left: 1500px;
+        }
+
+        .circle-10 {
+            background-color: coral;
+            position: relative;
+            top: -700px;
+            left: 1400px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    НГТУ, ФБ, Лабораторная работа 5
+</header>
+
+<main>
+    <input type="button" onclick="foundCircles()">
+    <div class="circle circle-1" id="circle-1" onclick="hideCircle1()">1</div>
+    <div class="circle circle-2" id="circle-2" onclick="hideCircle2()">2</div>
+    <div class="circle circle-3" id="circle-3" onclick="hideCircle3()">3</div>
+    <div class="circle circle-4" id="circle-4" onclick="hideCircle4()">4</div>
+    <div class="circle circle-5" id="circle-5" onclick="hideCircle5()">5</div>
+    <div class="circle circle-6" id="circle-6" onclick="hideCircle6()">6</div>
+    <div class="circle circle-7" id="circle-7" onclick="hideCircle7()">7</div>
+    <div class="circle circle-8" id="circle-8" onclick="hideCircle8()">8</div>
+    <div class="circle circle-9" id="circle-9" onclick="hideCircle9()">9</div>
+    <div class="circle circle-10" id="circle-10" onclick="hideCircle10()">10</div>
+</main>
+
+<footer>
+    &copy; Александр Герасимов, ФБИ-23. 2 курс, 2024
+</footer>
+</body>
+</html>
