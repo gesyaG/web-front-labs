@@ -13,7 +13,7 @@
         function blurChange() {
             let value = document.getElementById('blurValue').value + '%';
             document.getElementById('blurOutput').innerText = value;
-            document.getElementById('blueImage').style.filter = 'grayscale(' + value + ')';
+            document.getElementById('blueImage').style.filter = 'invert(' + value + ')';
         }
     </script>
 
@@ -25,7 +25,7 @@
 
 <main>
     <div>
-        Фильтр grayscale:
+        Фильтр invert:
         <input type="range" min="0" max="100" value="0" onchange="blurChange()" id="blurValue">
         <span id="blurOutput"></span>
     </div>
